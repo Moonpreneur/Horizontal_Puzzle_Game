@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORIZONTAL PUZZLE GAME</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="logo">
+        <img src="website-logo.png" alt="website-logo">
+    </div>
+    <div class="container" id="page1">
+        <h1>HORIZONTAL PUZZLE GAME</h1>
+        <button id="startGameBtn1">HOW TO PLAY</button>
+    </div>
+
+    <div class="container hidden" id="page2">
+        <h2>HOW TO PLAY</h2>
+        <p>Place each number in one of the five squares so that the product of the three numbers in the horizontal rows equals the product of the three numbers in the vertical column.<br> What is the largest possible value of the horizontal or vertical product?</p>
+        <button id="startGameBtn2">Start Game</button>
+    </div>
+
+    <div class="container hidden" id="page3">
+        <h2>Arrange the Numbers in the Cross Pattern</h2>
+        <div id="timer">Time Remaining: 60</div>
+        <div class="game-board">
+            <div class="circle" id="circle1" data-correct="value1"></div>
+            <div class="circle" id="circle2" data-correct="value2"></div>
+            <div class="circle" id="circle3" data-correct="value3"></div>
+            <div class="circle" id="circle4" data-correct="value4"></div>
+            <div class="circle" id="circle5" data-correct="value5"></div>
+        </div>
+        <div class="draggable-container" id="draggableContainer"></div>
+        <div id="result"></div>
+        <div id="score">Score: 0</div>
+        <button id="resetGameBtn">Reset Game</button>
+    </div>
+
+    <div class="container hidden" id="gameOverPage">
+        <h2>Game Over!</h2>
+        <p id="finalScore">Your Score: 0</p>
+        <button id="restartGameBtn">Play Again</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
